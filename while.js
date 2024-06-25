@@ -22,20 +22,23 @@ let tabuada = 7
 while (multiplicador <= 10) {
   let resultado = tabuada * multiplicador
   multiplicador++
-  console.log(resultado)
+  console.log(tabuada + " x " + multiplicador + " = " + resultado)
 }
 
 
 // 3. Use um laço while para somar de 1 até 999, apenas somando os números ímpares. Utilize um if para verificar se o número é ímpar.
 
-let impar = 0
+let cont = 1
+let soma = 0;
 
-while (impar <= 999) {
-  if (impar % 2 !== 0){
-    console.log(impar)
+while (cont <= 999) {
+  if (cont % 2 !== 0){
+    soma = soma + cont
   }
-  impar++
+  cont++
 }
+
+console.log("Soma dos impares: " + soma)
 
 // 4. Crie um programa que conta quantos números entre 1 e 1000 são divisíveis por 9, mostre o número e ao final exiba o total de números divisíveis por 9.
 
@@ -44,7 +47,7 @@ let divisiveis = 0
 
 while (contador <= 1000) {
   if (contador % 9 === 0) {
-    console.log(contador)
+    console.log(contador + " é divisível por 9.")
     divisiveis++
   }
   contador++
